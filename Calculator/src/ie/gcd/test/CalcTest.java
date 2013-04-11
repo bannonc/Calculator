@@ -4,6 +4,7 @@
 package ie.gcd.test;
 
 import static org.junit.Assert.*;
+import ie.gcd.maths.Calc;
 
 import org.junit.After;
 import org.junit.Before;
@@ -20,6 +21,7 @@ public class CalcTest {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		
 	}
 
 	/**
@@ -30,11 +32,12 @@ public class CalcTest {
 	}
 
 	/**
-	 * Test method for {@link ie.gcd.maths.Calc#add(int, int)}.
+	 * Test method for {@link ie.gcd.maths.Calc#add(int,int)}.
 	 */
 	@Test
 	public void testAdd() {
-		fail("Not yet implemented");
+		Calc u = new Calc();
+		assertEquals(5, u.add(2,3));
 	}
 
 }
